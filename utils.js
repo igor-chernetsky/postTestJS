@@ -77,6 +77,8 @@ function _getImage(block, id) {
 }
 
 function _getArticle(stringResult) {
+  // using fake window object to execute the code from the source since it returs data in such format
+  // other option if parse it as a string, but I suppose such format was used deliberately.
   const window = {shinez: {}};
   eval(stringResult);
   return window.shinez.article;
