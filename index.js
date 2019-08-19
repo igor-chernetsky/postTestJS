@@ -16,9 +16,7 @@ app.get('/', (req, res) => {
       res.end();
     })
     .catch(e => {
-      res.writeHead(400, {
-        'Content-Type': 'text/html'
-      });
+      res.status(400);
       res.send('Error occured!');
     })
 });
