@@ -1,0 +1,26 @@
+{
+  "name": "posttestjs",
+  "version": "1.0.0",
+  "description": "* run `npm install`\r * run `node index.js`\r * open in browser `localhost:3000`\r in order to test navigation use query parameter bnn `localhost:3000?bnn=10`\r it's also possible to use offset parameter to open specific page `localhost:3000?bnn=10&offset=20`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igor-chernetsky/postTestJS.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "IgorCh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igor-chernetsky/postTestJS/issues"
+  },
+  "homepage": "https://github.com/igor-chernetsky/postTestJS#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.1"
+  }
+}
