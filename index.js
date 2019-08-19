@@ -4,7 +4,8 @@ const axios = require('axios');
 const {renderArticles, wrapHtml} = require('./utils');
 
 app.get('/', (req, res) => {
-  axios.get('https://article.omgcheckitout.com/articles/6sIR7uLfAksK0WAaqIw0CY.js')
+  const articleId = req.query.id || '6sIR7uLfAksK0WAaqIw0CY';
+  axios.get(`https://article.omgcheckitout.com/articles/${articleId}.js`)
     .then(response => {
       const result = renderArticles(response.data, req.query);
 
